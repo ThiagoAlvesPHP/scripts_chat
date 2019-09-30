@@ -1,0 +1,10 @@
+.container{
+	margin-top: 50px;
+}
+.well, .alert{
+	opacity: 0.9;
+}
+.form-control{
+	height: 50px;
+	font-size: 20px;
+}

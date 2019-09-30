@@ -1,0 +1,18 @@
+.container{
+	margin-top: 20px;
+}
+.col-sm-3, .col-sm-9{
+	height: 500px;
+}
+.nicks{
+	height: 500px;
+}
+.chat{
+	height: 350px;
+}
+.form-chat{
+	height: 130px;
+}
+.btn-enviar{
+	height: 80px;
+}
