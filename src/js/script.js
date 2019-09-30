@@ -13,7 +13,7 @@ $(function(){
         });
     };
 
-    setInterval(logados, 800);
+    setInterval(logados, 500);
 
     //MENSAGENS ENVIADAS
     const getMensagens = '1';
@@ -28,8 +28,23 @@ $(function(){
         });
     };
 
-    setInterval(logados, 800);
+    setInterval(logados, 500);
 
+    //QUANTIDADE DE USUARIOS LOGADOS
+    const qt = 'qt';
+
+    var qtlogados = function(){
+        $.ajax({
+            url:'ajax.php',
+            type:'POST',
+            data:{qt:qt},
+            success:function(data){
+                $('.qt_user').html(data);
+            }
+        });
+    };
+
+    setInterval(qtlogados, 500);
 
     $(document).on('click', '.btn-enviar', function(e){
     	e.preventDefault();

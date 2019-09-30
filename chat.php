@@ -47,7 +47,7 @@ $nicks = $sql->getUser();
 			<div class="well text-center">
 				<div class="row">
 					<div class="col-sm-6">
-						<h3>Chat - <?=$nicks[0]['qt']; if($nicks[0]['qt'] == 1): echo ' Usuário'; else: echo ' Usuários'; endif; ?></h3>
+						<h3>Chat - <span class="qt_user"></span></h3>
 					</div>
 					<div class="col-sm-6">
 						<a href="sair.php" class="btn btn-danger btn-block btn-lg">Sair</a>
